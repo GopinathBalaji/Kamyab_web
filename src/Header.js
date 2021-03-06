@@ -20,6 +20,9 @@ function Header() {
 function vision(){
     window.location.href = "http://127.0.0.1:5500/public/voice.html";
 }
+function profile(){
+    window.location.href = "http://127.0.0.1:5500/public/profile.html";
+}
     return (
         <div className="header">
             
@@ -38,7 +41,7 @@ function vision(){
                 <HeaderOption Icon={SupervisorAccountIcon}  onClick={vision} title='Hands free'/>
                 <HeaderOption Icon={BusinessCenterIcon} title='Jobs'/>
                 <HeaderOption Icon={ChatIcon} title='Messaging'/>
-                <HeaderOption Icon={NotificationIcon} title='Notification'/>
+                <HeaderOption Icon={NotificationIcon} onClick={profile} title='Profile'/>
                 <HeaderOption avatar={true} title='Logout' onClick={logoutOfApp}/>
 
             </div>
