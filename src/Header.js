@@ -17,6 +17,9 @@ function Header() {
       dispatch(logout())
       auth.signOut();
     };
+function vision(){
+    window.location.href = "http://127.0.0.1:5500/public/voice.html";
+}
     return (
         <div className="header">
             
@@ -32,11 +35,11 @@ function Header() {
 
             <div className="header_right">
                 <HeaderOption Icon={HomeIcon} title='Home'/>
-                <HeaderOption Icon={SupervisorAccountIcon} title='My Network'/>
+                <HeaderOption Icon={SupervisorAccountIcon}  onClick={vision} title='Speaking feature'/>
                 <HeaderOption Icon={BusinessCenterIcon} title='Jobs'/>
                 <HeaderOption Icon={ChatIcon} title='Messaging'/>
                 <HeaderOption Icon={NotificationIcon} title='Notification'/>
-                <HeaderOption avatar={true} title='me' onClick={logoutOfApp}/>
+                <HeaderOption avatar={true} title='Logout' onClick={logoutOfApp}/>
 
             </div>
                         
