@@ -35,7 +35,7 @@ function vision(){
 
             <div className="header_right">
                 <HeaderOption Icon={HomeIcon} title='Home'/>
-                <HeaderOption Icon={SupervisorAccountIcon}  onClick={vision} title='Speaking feature'/>
+                <HeaderOption Icon={SupervisorAccountIcon}  onClick={vision} title='Hands free'/>
                 <HeaderOption Icon={BusinessCenterIcon} title='Jobs'/>
                 <HeaderOption Icon={ChatIcon} title='Messaging'/>
                 <HeaderOption Icon={NotificationIcon} title='Notification'/>
